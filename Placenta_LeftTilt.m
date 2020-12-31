@@ -84,9 +84,9 @@ Avg_Placenta_Left_R(11)=median(Left_HbO2_Relative-1);
 Avg_Placenta_Left_R(12)=iqr(Left_HbO2_Relative-1);
 
 % paired t-test for relative change
-[h_sto2_r,p_sto2_r]=ttest(Base_StO2_Relative,Left_StO2_Relative);
-[h_hbt_r,p_hbt_r]=ttest(Base_HbT_Relative,Left_HbT_Relative);
-[h_hbo2_r,p_hbo2_r]=ttest(Base_HbO2_Relative,Left_HbO2_Relative);
+[H_Left_R(1),P_Left_R(1)]=ttest(Base_StO2_Relative,Left_StO2_Relative);
+[H_Left_R(2),P_Left_R(2)]=ttest(Base_HbT_Relative,Left_HbT_Relative);
+[H_Left_R(3),P_Left_R(3)]=ttest(Base_HbO2_Relative,Left_HbO2_Relative);
 
 % plot absolute values with S.D. as error bar
 x=[1 2];
